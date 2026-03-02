@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hafıza Oyunu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>🧠 Hafıza Oyunu</h1>
+      <p class="description">
+        Aynı emojiye sahip kart çiftlerini bulun. Tüm kartları eşleştirince kazanırsınız.
+      </p>
+
+      <section class="controls">
+        <button id="restart-btn" type="button">Yeniden Başlat</button>
+        <div class="stats">
+          <span>Hamle: <strong id="move-count">0</strong></span>
+          <span>Süre: <strong id="timer">0</strong>s</span>
+        </div>
+      </section>
+
+      <section id="game-board" class="board" aria-label="Hafıza oyun tahtası"></section>
+
+      <p id="status" class="status" role="status" aria-live="polite">
+        Oyuna başlamak için bir kart seçin.
+      </p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
