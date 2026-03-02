@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Dodge</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hud" aria-live="polite">
+        <h1>Star Dodge</h1>
+        <div class="hud__stats">
+          <span id="scoreLabel">Score: 0</span>
+          <span id="bestLabel">Best: 0</span>
+        </div>
+      </header>
+      <canvas
+        id="gameCanvas"
+        width="800"
+        height="500"
+        role="img"
+        aria-label="Game board showing player ship and asteroids"
+      ></canvas>
+      <p class="hint">Use Arrow Keys or A / D to move. Press P to pause and Space to restart.</p>
+    </main>
+
+    <script type="module" src="src/game.js"></script>
+  </body>
+</html>
